@@ -16,10 +16,6 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <header className={`${styles.header} ${scrollY > 5 ? styles.active : ""}`}>
       <div className={styles.inner}>
