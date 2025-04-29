@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+
+  a {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
