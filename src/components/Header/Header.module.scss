@@ -2,10 +2,15 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: #ffffffcc;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #eee;
   z-index: 100;
+  backdrop-filter: none;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+
+  &.active {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eee;
+  }
 }
 
 .inner {
@@ -36,4 +41,10 @@
       color: #000;
     }
   }
+}
+
+.progress {
+  height: 3px;
+  background: #333;
+  transition: width 0.2s ease;
 }
